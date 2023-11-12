@@ -1,0 +1,28 @@
+.componentspace {
+  margin: 100px;
+}
+
+.card {
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  top: 100px;
+  background: white;
+  border-color: white;
+  width: 400px;
+  height: 450px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card-body {
+  min-height: 200px;
+}
+.headingclass{
+padding: 10px;
+font-family: Roboto, sans-serif;
+}

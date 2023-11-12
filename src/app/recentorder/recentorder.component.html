@@ -1,0 +1,47 @@
+  <div class="left-content">  <div class="componentspace">
+    <h1 class="headingclass">Recent Orders</h1>
+    <table class="recent-orders table-responsive">
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Name</th>
+          <th>Products</th>
+          <th>Status</th>
+          <th>Tracking No #</th>
+          <th>Delivery Date</th>
+          <th>Shipping</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let order of recentOrders;let i = index">
+          <td>{{ i+1 }}</td>
+          <td>{{ order.product }}</td>
+          <td>{{ order.name }}</td>
+          <!-- <td [ngClass]="getStatusClass(order.status)">{{ order.status }}</td> -->
+          <td>
+            <app-tag [order]="order"></app-tag>
+          </td>
+          <!-- <td>
+          <ng-container *ngIf="order.status === 'Pending'; else failedPaid">
+            <span class="status-pending">Pending</span>
+          </ng-container>
+          <ng-template #failedPaid>
+            <span *ngIf="order.status === 'Failed'" class="status-failed">Failed</span>
+            <span *ngIf="order.status === 'Paid'" class="status-paid">Paid</span>
+          </ng-template>
+        </td> -->
+
+          <td>{{ order.tracking_no }}</td>
+          <td>{{ order.delivery_date | date }}</td>
+          <td style="text-align: center;"> {{ order.shipping ? 'Yes' : 'No' }}
+          </td>
+          <td><span (click)="showPopup(order)"> <i class="fa fa-times"
+                aria-hidden="true"></i>
+            </span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

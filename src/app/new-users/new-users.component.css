@@ -1,0 +1,112 @@
+.new-users {
+    display: flex;
+    flex-direction: column;
+    max-height: 600px; /* Set a maximum height for scrolling */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+  }
+ 
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add a border between users */
+  }
+  
+   
+  .progress-bar {
+    height: 10px;
+  }
+  
+  .right-content {
+    float: right;
+    width: 30%; 
+    background-color: white;
+    z-index: 1;
+
+  }
+  .headingclass{
+  padding: 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  }
+mat-progress-bar {
+  height: 20px; 
+  border-radius: 4px; 
+}
+
+
+.progress-text {
+  text-align: center; 
+  margin-left: 5px;
+}
+
+mat-progress-bar[color="primary"] .mat-progress-bar-fill::after {
+  background-color: blue; 
+}
+.user-image-wrapper {
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* Position the status-dot within the user-image-wrapper */
+.status-dot {
+  position: absolute;
+  width: 10px; /* Adjust the size as needed */
+  height: 10px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make it a circle */
+  right: 11px;
+  bottom: 3px;
+}
+
+ .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .user-details {
+    margin-left: 10px; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; 
+  }
+  .user-name, .user-address {
+    margin: 0; 
+   }
+  
+  .user-name {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .user-address {
+    font-size: 14px;
+    color: gray; 
+  }
+  .user-progress {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .more-button {
+    margin-top: 10px;
+    text-align: right;
+  background: #7d2ae8;
+  color: white;
+  display: inline-block;
+    vertical-align: middle;
+  }
+  .new-users::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+  }
+  
+  .new-users ::-webkit-scrollbar-thumb {
+    background-color: white; /* Set the color of the thumb (the moving part of the scrollbar) */
+  }
+  
+  .new-users ::-webkit-scrollbar-track {
+    background-color: white; /* Set the color of the track (the area behind the thumb) */
+  }

@@ -1,0 +1,36 @@
+.left-navigation {
+  background-color: white; 
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.left-navigation li {
+  list-style: none; 
+  /* margin-bottom: 10px;  */
+  /* padding: 6px 6px 6px 32px; */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.left-navigation a {
+  text-decoration: none; 
+  color:grey;
+  display: flex; 
+  align-items: center; 
+}
+
+.left-navigation i {
+  margin-right: 10px; 
+}
+.left-navigation a:hover {
+  color:  #506de2;
+}

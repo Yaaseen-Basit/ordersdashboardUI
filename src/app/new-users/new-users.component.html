@@ -1,0 +1,24 @@
+  <div class="right-content">
+    <div class="new-users">
+      <h1 class="headingclass">User Registerations</h1>
+      <div class="user" *ngFor="let user of newUsers">
+        <div class="user-image-wrapper">
+          <img [src]="user.picture" alt="User Image" class="user-image">
+          <div class="status-dot" [style.background-color]="user.isActive === true ? 'green' : 'blue'"></div>
+        </div>       
+         <div class="user-details">
+          <p class="user-name">{{ user.name }}</p>
+          <p class="user-address">{{ user.country }}</p>
+        </div>
+
+        <!-- <div class="user-progress">
+          <mat-progress-bar mode="determinate" [value]="user.progress" color="primary"></mat-progress-bar>
+          <span class="progress-text">{{ user.progress }}%</span>
+        </div>
+        <span ></span>
+        <span ></span>
+        <span><button class="more-button">More</button>        </span> -->
+      </div>
+    </div>
+  </div>
+
