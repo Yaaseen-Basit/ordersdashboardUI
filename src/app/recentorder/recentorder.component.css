@@ -82,3 +82,11 @@
     float: left;
       width: 70%; 
   }
+  .scrollable-table {
+    max-height: calc(10 * (60px));
+    overflow-y: auto;
+  }
+
+.scrollable-table::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}

@@ -3,7 +3,6 @@
   <div class="data-card" *ngFor="let card of topCards">
     <div class="card-header" [ngStyle]="{ 'background-color': getBackgroundColor(card.value), 'color': getFontColor(card.value) }">
       <div class="card-icon">
-        <!-- <span class="status">        <i *ngIf="card.value ==15" class="fa fa-music"></i> </span> -->
         <i *ngIf="card.value ==15" style="color: white;" class="fa fa-music"></i>
         <i *ngIf="card.value ==30" class="fa fa-pie-chart"></i>
         <i *ngIf="card.value ==35" class="fa fa-download"></i>
