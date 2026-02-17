@@ -1,6 +1,7 @@
 Order Management & Analytics Dashboard
 A High-Performance Angular Enterprise Solution
 
+![Order Dashboard Screenshot](orderdashboard%20new%20screenshot.png)
 
 🚀 Professional Overview
 This project is a sophisticated Order Management System (OMS) built with Angular 16, designed to demonstrate senior-level proficiency in reactive programming, state management, and modular architecture. It features a real-time data visualization layer and a robust CRUD-capable interface for order tracking.
